@@ -2,7 +2,7 @@
 
 Enter an address in France and see the nearest Carrefour drives that accept the Carte Cadeau, with a clickable map and a Google Maps directions link for each drive.
 
-**Live app:** _add the link after deploying_
+**Live app:** https://carrefour-carte-cadeau-store-finder.streamlit.app/
 
 ## What it does
 - Takes an address or a town and finds the nearest drives, sorted by distance.
