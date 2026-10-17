@@ -12,7 +12,7 @@ Enter an address in France and see the nearest Carrefour drives that accept the 
 - The address is kept in the page link, so a bookmarked link opens with the search already done. The app does not store it.
 
 ## How it works
-1. **Source:** Carrefour's published Carte Cadeau acceptance list (PDF, about 4,000 stores), linked from carrefour.fr/services/cartes-cadeaux.
+1. **Source:** Carrefour's published Carte Cadeau acceptance list (PDF, about 4,000 stores), linked from www.carrefour.fr/services/cartes-cadeaux .
 2. **Parsing:** `pdf_source.py` turns the PDF text into a table (store, postcode, town, address, format, accepted in store / at the drive).
 3. **Coordinates:** `prepare_data.py` adds latitude and longitude from the French government address service (BAN, free, no key) and writes `data/stores.csv`.
 4. **App:** `app.py` (Streamlit) geocodes the visitor's address, ranks the drives by straight-line distance and draws the map (Leaflet, OpenStreetMap tiles).
